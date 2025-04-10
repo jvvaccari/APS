@@ -1,0 +1,22 @@
+O que é o padrão Decorator?
+O Decorator é um padrão de projeto estrutural que permite adicionar novos comportamentos a objetos de forma dinâmica, sem alterar a classe original e sem precisar criar subclasses para cada combinação de funcionalidades.
+
+🎯 Quando usar?
+Quando quiser adicionar funcionalidades a um objeto sem mexer na classe original.
+
+Quando precisar de muitas combinações diferentes de comportamentos (ex: bebida com leite, canela, chocolate, etc.).
+
+Quando quiser seguir o princípio do aberto/fechado: "Aberto para extensão, fechado para modificação."
+
+🧱 Como funciona a estrutura?
+Interface comum (Bebida)
+Define os métodos que todas as classes (base e decoradoras) devem ter.
+
+Classe concreta (CafeSimples)
+A implementação básica (sem adicionais).
+
+Classe abstrata decoradora (AdicionalDecorator)
+Implementa a interface e armazena uma referência para uma Bebida. Serve de base para os decoradores concretos.
+
+Decoradores concretos (ComLeite, ComCanela)
+Estendem a classe decoradora e adicionam comportamento.

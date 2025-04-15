@@ -1,0 +1,11 @@
+🧠 Resumo do Observer
+Permite que múltiplos objetos (observers) sejam notificados automaticamente quando um objeto principal (subject) sofre alguma mudança.
+
+📦 Estrutura
+Papel	Descrição
+Subject	Interface para adicionar, remover e notificar observers
+ConcreteSubject	Guarda a lista de observers e dispara notificações
+Observer	Interface com o método notificar(String msg)
+ConcreteObserver	Implementa o que fazer ao receber uma notificação
+
+Exemplo: A Steam (subject) avisa os Gamers (observers) quando há um novo lançamento.
